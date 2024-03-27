@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="pokedex-toolbar">
+        <h1 id="pokedex-toolbar-title">Pokedex Query</h1>
+    </header>
+    <div id="pokedex-searchbar">
+        <input type="text" id="search-pokemon-name" placeholder="Enter Pokemon Name">
+        <button onclick="fetchData()" id="search-button">Search</button>
+    </div>
+    <div id="pokemon-data">
+        <div id="pokemon-data-header">
+            <div id="pokemon-name">
+                <text id="pokemonName"></text>
+            </div>
+            <div id="type-container">
+                <div id="pokemon-type1">
+                    <text id="pokemonType1"></text>
+                </div>
+                <div id="pokemon-type2">
+                    <text id="pokemonType2"></text>
+                </div>
+            </div>
+        </div>
+        <div id="pokemon-image">
+            <img src="" alt="Pokemon Sprite" id="pokemonSprite" style="display: none">
+        </div>
+        <div id="pokemon-info">
+            <text id="pokemonNumber"></text><br><br>
+            <text id="pokemonHeight"></text><br>
+            <text id="pokemonWeight"></text><br><br>
+            <text>Stats:</text><br>
+
+            <div id="stats">
+                <text>HP:  </text>
+                <div id="stats-container">
+                    <div id="hp-stat"></div>
+                </div>
+                <text id="hp-stat-label"></text>
+            </div>
+            <div id="stats">
+                <text>Atk: </text>
+                <div id="stats-container">
+                    <div id="atk-stat"></div>
+                </div>
+                <text id="atk-stat-label"></text>
+            </div>
+            <div id="stats">
+                <text>Def: </text>
+                <div id="stats-container">
+                    <div id="def-stat"></div>
+                </div>
+                <text id="def-stat-label"></text>
+            </div>
+            <div id="stats">
+                <text>SpA: </text>
+                <div id="stats-container">
+                    <div id="spAtk-stat"></div>
+                </div>
+                <text id="spAtk-stat-label"></text>
+            </div>
+            <div id="stats">
+                <text>SpD: </text>
+                <div id="stats-container">
+                    <div id="spDef-stat"></div>
+                </div>
+                <text id="spDef-stat-label"></text>
+            </div>
+            <div id="stats">
+                <text>Spd: </text>
+                <div id="stats-container">
+                    <div id="spd-stat"></div>
+                </div>
+                <text id="spd-stat-label"></text>
+            </div>
+
+            <div id="pokemon-abilities"></div>
+
+        </div>
+    </div>
+    <script src="pokedex.js"></script>
+</body>
+</html>
